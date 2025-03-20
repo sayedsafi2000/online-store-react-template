@@ -58,7 +58,7 @@ const AllProducts = () => {
                             See all
                         </Link>
                     </div>
-                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
                         {categoryProducts.slice(0, 6).map(item => (
                             <ProductCard 
                                 key={item._id}
