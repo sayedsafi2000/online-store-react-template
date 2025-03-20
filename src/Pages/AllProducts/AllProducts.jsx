@@ -46,7 +46,7 @@ const AllProducts = () => {
             const categoryProducts = product.filter(item => item.category === category);
             
             return (
-                <div key={category} className="bg-white dark:bg-gray-800 rounded-xl mb-8 p-6">
+                <div key={category} className="bg-white dark:bg-gray-800 rounded-xl mb-8 p-4">
                     <div className="flex justify-between items-center mb-6">
                         <h3 className="font-bold text-xl text-gray-800 dark:text-white">
                             {formatCategoryName(category)}
@@ -75,7 +75,7 @@ const AllProducts = () => {
     return (
         <div className=" dark:bg-gray-900 min-h-screen">
             {/* Top Categories Section */}
-            <div className="p-6">
+            <div className="">
                 {renderCategorySection(topCategories)}
             </div>
 
@@ -83,7 +83,7 @@ const AllProducts = () => {
             <HomeSecondBanner />
 
             {/* Bottom Categories Section */}
-            <div className="p-6">
+            <div className="">
                 {renderCategorySection(bottomCategories)}
             </div>
         </div>
